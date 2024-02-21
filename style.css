@@ -1,0 +1,823 @@
+/* text-standards */
+body {
+    font-family: monospace;
+    font-size: 8pt;
+    font-weight: 300;
+    text-align: justify;
+    color: #480805;
+    margin: 0;
+    height: 100%;
+    overflow: auto;
+    opacity: .8;
+}
+
+.background-fade {
+  animation: fadeInAnimation 6s forwards;
+  overflow: auto;
+}
+
+  @keyframes fadeInAnimation {
+      0% {
+          opacity: 0;
+      }
+      100% {
+          opacity: 1;
+      }
+  } 
+
+  .zoomed-content {
+    transform: scale(1.2); 
+    transform-origin: top left; 
+    overflow: auto;
+    margin: 0 auto; 
+    overflow-y:hidden;
+}
+
+.ti-004 {
+    width: 100%;
+    /* height: 100%; */
+    opacity: 1;
+    max-height: 90%;
+}
+
+.container {
+  position: relative;
+  display: flex;
+}
+
+.suggestion {
+  position: absolute;
+  display: flex;
+  top: 47vh;
+  left: 37vw;
+}
+
+.hov-div {
+  position: absolute;
+  display: flex;
+  width: 300px;
+  height: 100px;
+  top: 90vh;
+  left: 38.5vw;
+}
+
+.hov-reveal {
+  opacity: 0; 
+  transition: opacity 1s ease;
+  position: absolute;
+  transform: rotate(1deg);
+}
+
+.hov-div.show-text .hov-reveal {
+  opacity: 1;
+}
+
+.hov-div2 {
+  position: absolute;
+  display: flex;
+  width: 90px;
+  height: 70px;
+  left: 66vw;
+  top: 60vh;
+}
+
+.hov-reveal2 {
+  opacity: 0; 
+  position: absolute;
+  transform: rotate(.75deg);
+  transition: opacity 1s ease;
+}
+
+.hov-div2.show-text .hov-reveal2 {
+  opacity: 1;
+}
+
+.hov-div3 {
+  position: absolute;
+  display: flex;
+  width: 90px;
+  height: 100px;
+  left: 23vw;
+  top: 30vh;
+}
+
+.hov-reveal3 {
+  opacity: 0; 
+  position: absolute;
+  transform: rotate(.5deg);
+  transition: opacity 1s ease;
+}
+
+.hov-div3.show-text .hov-reveal3 {
+  opacity: 1;
+}
+
+.hov-div4 {
+  position: absolute;
+  display: flex;
+  width: 270px;
+  height: 200px;
+  left: 10vw;
+  top: 50vh;
+}
+
+.hov-reveal4 {
+  opacity: 0; 
+  position: absolute;
+  transform: rotate(-1deg);
+  transition: opacity 1s ease;
+}
+
+.hov-div4.show-text .hov-reveal4 {
+  opacity: 1;
+}
+
+.hov-div5 {
+  position: absolute;
+  display: flex;
+  width: 130px;
+  height: 40px;
+  left: 14vw;
+  top: 80vh;
+}
+
+.hov-reveal5 {
+  opacity: 0; 
+  position: absolute;
+  transform: rotate(1deg);
+  transition: opacity 1s ease;
+}
+
+.hov-div5.show-text .hov-reveal5 {
+  opacity: 1;
+}
+
+.hov-div6 {
+  position: absolute;
+  display: flex;
+  width: 190px;
+  height: 100px;
+  left: 83vw;
+  top: 90vh;
+}
+
+.hov-reveal6 {
+  opacity: 0; 
+  position: absolute;
+  transform: rotate(-.75deg);
+  transition: opacity 1s ease;
+}
+
+.hov-div6.show-text .hov-reveal6 {
+  opacity: 1;
+}
+
+.hov-div7 {
+  position: absolute;
+  display: flex;
+  width: 190px;
+  height: 100px;
+  left: 43vw;
+  top: 25vh;
+}
+
+.hov-reveal7 {
+  opacity: 0; 
+  position: absolute;
+  transform: rotate(1.2deg);
+  transition: opacity 1s ease;
+}
+
+.hov-div7.show-text .hov-reveal7 {
+  opacity: 1;
+}
+
+.hov-div8 {
+  position: absolute;
+  display: flex;
+  width: 300px;
+  height: 100px;
+  left: 70vw;
+  top: 10vh;
+}
+
+.hov-reveal8 {
+  opacity: 0; 
+  position: absolute;
+  transform: rotate(1.3deg);
+  transition: opacity 1s ease;
+}
+
+.hov-div8.show-text .hov-reveal8 {
+  opacity: 1;
+}
+
+.hov-div9 {
+  position: absolute;
+  display: flex;
+  width: 200px;
+  height: 200px;
+  left: 20vw;
+  top: 10vh;
+}
+
+.hov-reveal9 {
+  opacity: 0; 
+  position: absolute;
+  transform: rotate(-1.1deg);
+  transition: opacity 1s ease;
+}
+
+.hov-div9.show-text .hov-reveal9 {
+  opacity: 1;
+}
+
+.hov-div10 {
+  position: absolute;
+  display: flex;
+  width: 225px;
+  height: 200px;
+  left: 8vw;
+  top: 13vh;
+}
+
+.hov-reveal10 {
+  opacity: 0; 
+  position: absolute;
+  transform: rotate(1.1deg);
+  transition: opacity 1s ease;
+}
+
+.hov-div10.show-text .hov-reveal10 {
+  opacity: 1;
+}
+
+.hov-div11 {
+  position: absolute;
+  display: flex;
+  width: 350px;
+  height: 100px;
+  left: 30vw;
+  top: 1vh;
+}
+
+.hov-reveal11 {
+  opacity: 0; 
+  position: absolute;
+  transform: rotate(-.8deg);
+  transition: opacity 1s ease;
+}
+
+.hov-div11.show-text .hov-reveal11 {
+  opacity: 1;
+}
+
+.hov-div12 {
+  position: absolute;
+  display: flex;
+  width: 100px;
+  height: 100px;
+  left: 50vw;
+  top: 6vh;
+}
+
+.hov-reveal12 {
+  opacity: 0; 
+  position: absolute;
+  transform: rotate(1deg);
+  transition: opacity 1s ease;
+}
+
+.hov-div12.show-text .hov-reveal12 {
+  opacity: 1;
+}
+
+.hov-div13 {
+  position: absolute;
+  display: flex;
+  width: 350px;
+  height: 100px;
+  left: 31.5vw;
+  top: 40vh;
+}
+
+.hov-reveal13 {
+  opacity: 0; 
+  position: absolute;
+  transform: rotate(-.77deg);
+  transition: opacity 1s ease;
+}
+
+.hov-div13.show-text .hov-reveal13 {
+  opacity: 1;
+}
+
+.hov-div14 {
+  position: absolute;
+  display: flex;
+  width: 410px;
+  height: 100px;
+  left: 65vw;
+  top: 45vh;
+}
+
+.hov-reveal14 {
+  opacity: 0; 
+  position: absolute;
+  transform: rotate(-.5deg);
+  transition: opacity 1s ease;
+}
+
+.hov-div14.show-text .hov-reveal14 {
+  opacity: 1;
+}
+
+.hov-div15 {
+  position: absolute;
+  display: flex;
+  width: 160px;
+  height: 100px;
+  left: 60vw;
+  top: 25vh;
+}
+
+.hov-reveal15 {
+  opacity: 0; 
+  position: absolute;
+  transform: rotate(.45deg);
+  transition: opacity 1s ease;
+}
+
+.hov-div15.show-text .hov-reveal15 {
+  opacity: 1;
+}
+
+.hov-div16 {
+  position: absolute;
+  display: flex;
+  width: 170px;
+  height: 200px;
+  left: 8vw;
+  top: 58vh;
+}
+
+.hov-reveal16 {
+  opacity: 0; 
+  position: absolute;
+  transform: rotate(-1deg);
+  transition: opacity 1s ease;
+}
+
+.hov-div16.show-text .hov-reveal16 {
+  opacity: 1;
+}
+
+.hov-div17 {
+  position: absolute;
+  display: flex;
+  width: 300px;
+  height: 200px;
+  left: 12vw;
+  top: 120vh;
+}
+
+.hov-reveal17 {
+  opacity: 0; 
+  position: absolute;
+  transform: rotate(.25deg);
+  transition: opacity 1s ease;
+}
+
+.hov-div17.show-text .hov-reveal17 {
+  opacity: 1;
+}
+
+.hov-div18 {
+  position: absolute;
+  display: flex;
+  width: 200px;
+  height: 200px;
+  left: 50vw;
+  top: 100vh;
+}
+
+.hov-reveal18 {
+  opacity: 0; 
+  position: absolute;
+  transform: rotate(-.9deg);
+  transition: opacity 1s ease;
+}
+
+.hov-div18.show-text .hov-reveal18 {
+  opacity: 1;
+}
+
+.hov-div19 {
+  position: absolute;
+  display: flex;
+  width: 130px;
+  height: 200px;
+  left: 57vw;
+  top: 123vh;
+}
+
+.hov-reveal19 {
+  opacity: 0; 
+  position: absolute;
+  transform: rotate(.35deg);
+  transition: opacity 1s ease;
+}
+
+.hov-div19.show-text .hov-reveal19 {
+  opacity: 1;
+}
+
+.hov-div20 {
+  position: absolute;
+  display: flex;
+  width: 85px;
+  height: 100px;
+  left: 4.5vw;
+  top: 90vh;
+}
+
+.hov-reveal20 {
+  opacity: 0; 
+  position: absolute;
+  transform: rotate(-.75deg);
+  transition: opacity 1s ease;
+}
+
+.hov-div20.show-text .hov-reveal20 {
+  opacity: 1;
+}
+
+.hov-div21 {
+  position: absolute;
+  display: flex;
+  width: 75px;
+  height: 100px;
+  left: 76vw;
+  top: 80vh;
+}
+
+.hov-reveal21 {
+  opacity: 0; 
+  position: absolute;
+  transform: rotate(.75deg);
+  transition: opacity 1s ease;
+}
+
+.hov-div21.show-text .hov-reveal21 {
+  opacity: 1;
+}
+
+.hov-div22 {
+  position: absolute;
+  display: flex;
+  z-index: 10;
+  top: 51vh;
+  left: 59vw;
+}
+
+.hov-reveal22 {
+  width: 110px;
+  height: auto;
+  transform: rotate(-25deg);
+  opacity: 0; 
+  position: absolute;
+  transition: opacity 1s ease;
+}
+
+.hov-div22.show-text .hov-reveal22 {
+  opacity: 1;
+}
+
+.hov-div23 {
+  position: absolute;
+  display: flex;
+  z-index: 10;
+  top: 95vh;
+  left: 9vw;
+}
+
+.hov-reveal23 {
+  width: 210px;
+  height: auto;
+  transform: rotate(36deg);
+  opacity: 0; 
+  position: absolute;
+  transition: opacity 1s ease;
+}
+
+.hov-div23.show-text .hov-reveal23 {
+  opacity: 1;
+}
+
+.hov-div24 {
+  position: absolute;
+  display: flex;
+  z-index: 10;
+  top: 18vh;
+  left: 26vw;
+}
+
+.hov-reveal24 {
+  width: 70px;
+  height: auto;
+  /* transform: rotate(36deg); */
+  opacity: 0; 
+  position: absolute;
+  transition: opacity 1s ease;
+}
+
+.hov-div24.show-text .hov-reveal24 {
+  opacity: 1;
+}
+
+.hov-div25 {
+  position: absolute;
+  display: flex;
+  z-index: 10;
+  top: 67vh;
+  left: 88vw;
+}
+
+.hov-reveal25 {
+  width: 125px;
+  height: auto;
+  transform: rotate(16deg);
+  opacity: 0; 
+  position: absolute;
+  transition: opacity 1s ease;
+}
+
+.hov-div25.show-text .hov-reveal25 {
+  opacity: 1;
+}
+
+.hov-div26 {
+  position: absolute;
+  display: flex;
+  z-index: 10;
+  top: 26vh;
+  left: 16vw;
+}
+
+.hov-reveal26 {
+  width: 60px;
+  height: auto;
+  transform: rotate(200deg);
+  opacity: 0; 
+  position: absolute;
+  transition: opacity 1s ease;
+}
+
+.hov-div26.show-text .hov-reveal26 {
+  opacity: 1;
+}
+
+.hov-div27 {
+  position: absolute;
+  display: flex;
+  z-index: 10;
+  top: 26vh;
+  left: 73vw;
+}
+
+.hov-reveal27 {
+  width: 160px;
+  height: auto;
+  transform: rotate(8deg);
+  opacity: 0; 
+  position: absolute;
+  transition: opacity 1s ease;
+}
+
+.hov-div27.show-text .hov-reveal27 {
+  opacity: 1;
+}
+
+.hov-div28 {
+  position: absolute;
+  display: flex;
+  z-index: 10;
+  top: 110vh;
+  left: 47vw;
+}
+
+.hov-reveal28 {
+  width: 120px;
+  height: auto;
+  transform: rotate(3deg);
+  opacity: 0; 
+  position: absolute;
+  transition: opacity 1s ease;
+}
+
+.hov-div28.show-text .hov-reveal28 {
+  opacity: 1;
+}
+
+.hov-div29 {
+  position: absolute;
+  display: flex;
+  width: 150px;
+  height: 200px;
+  top: 55vh;
+  left: 80vw;
+}
+
+.hov-reveal29 {
+  opacity: 0; 
+  position: absolute;
+  transform: rotate(-.1deg);
+  transition: opacity 1s ease;
+}
+
+.hov-div29.show-text .hov-reveal29 {
+  opacity: 1;
+}
+
+.hov-div30 {
+  position: absolute;
+  display: flex;
+  width: 50px;
+  height: 200px;
+  top: 35vh;
+  left: 3vw;
+}
+
+.hov-reveal30 {
+  opacity: 0; 
+  position: absolute;
+  transform: rotate(.5deg);
+  transition: opacity 1s ease;
+}
+
+.hov-div30.show-text .hov-reveal30 {
+  opacity: 1;
+}
+
+.hov-div31 {
+  position: absolute;
+  display: flex;
+  width: 75px;
+  height: 200px;
+  top: 14vh;
+  left: 36vw;
+}
+
+.hov-reveal31 {
+  opacity: 0; 
+  position: absolute;
+  transform: rotate(.8deg);
+  transition: opacity 1s ease;
+}
+
+.hov-div31.show-text .hov-reveal31 {
+  opacity: 1;
+}
+
+.hov-div32 {
+  position: absolute;
+  display: flex;
+  width: 75px;
+  height: 200px;
+  top: 12vh;
+  left: 94vw;
+}
+
+.hov-reveal32 {
+  opacity: 0; 
+  position: absolute;
+  transform: rotate(.4deg);
+  transition: opacity 1s ease;
+}
+
+.hov-div32.show-text .hov-reveal32 {
+  opacity: 1;
+}
+
+.hov-div33 {
+  position: absolute;
+  display: flex;
+  z-index: 10;
+  top: 70vh;
+  left: 25vw;
+}
+
+.hov-reveal33 {
+  width: 165px;
+  height: auto;
+  transform: rotate(2deg);
+  opacity: 0; 
+  position: absolute;
+  transition: opacity 1s ease;
+}
+
+.hov-div33.show-text .hov-reveal33 {
+  opacity: 1;
+}
+
+.hov-div34 {
+  position: absolute;
+  display: flex;
+  z-index: 10;
+  top: 110vh;
+  left: 70vw;
+}
+
+.hov-reveal34 {
+  width: 300px;
+  height: auto;
+  transform: rotate(3deg);
+  opacity: 0; 
+  position: absolute;
+  transition: opacity 1s ease;
+}
+
+.hov-div34.show-text .hov-reveal34 {
+  opacity: 1;
+}
+
+.hov-div35 {
+  position: absolute;
+  display: flex;
+  width: 120px;
+  height: 200px;
+  top: 102vh;
+  left: 90vw;
+}
+
+.hov-reveal35 {
+  opacity: 0; 
+  position: absolute;
+  transform: rotate(-.25deg);
+  transition: opacity 1s ease;
+}
+
+.hov-div35.show-text .hov-reveal35 {
+  opacity: 1;
+}
+
+.hov-div36 {
+  position: absolute;
+  display: flex;
+  width: 90px;
+  height: 200px;
+  top: 102vh;
+  left: 37vw;
+}
+
+.hov-reveal36 {
+  opacity: 0; 
+  position: absolute;
+  transform: rotate(.5deg);
+  transition: opacity 1s ease;
+}
+
+.hov-div36.show-text .hov-reveal36 {
+  opacity: 1;
+}
+
+.hov-div37 {
+  position: absolute;
+  display: flex;
+  width: 200px;
+  height: 100px;
+  top: 130vh;
+  left: 20vw;
+}
+
+.hov-reveal37 {
+  opacity: 0; 
+  position: absolute;
+  transform: rotate(-1deg);
+  transition: opacity 1s ease;
+}
+
+.hov-div37.show-text .hov-reveal37 {
+  opacity: 1;
+}
+
+.hov-div38 {
+  position: absolute;
+  display: flex;
+  width: 200px;
+  height: 100px;
+  top: 2vh;
+  left: 2vw;
+}
+
+.hov-reveal38 {
+  opacity: 0; 
+  position: absolute;
+  transform: rotate(-1.2deg);
+  transition: opacity 1s ease;
+}
+
+.hov-div38.show-text .hov-reveal38 {
+  opacity: 1;
+}
+
